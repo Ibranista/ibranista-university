@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="./src/script/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <nav
+        class="px-2 sm:px-4 py-2.5 bg-gray-900 fixe w-full z-30 top-0 left-0 border-b border-gray-200 dark:border-gray-600 relative"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="./src/assets/site-logo.svg"
+              class="h-6 mr-3 sm:h-9"
+              alt="Ibranista Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >Ibranista</span
+            >
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Start Today
+            </button>
+            <div class="relative md:hidden">
+              <nav x-data="{ open: false }">
+                <button
+                  data-collapse-toggle="navbar-sticky"
+                  class="nav-toggler w-14 h-10 relative bg-red-600 rounded"
+                  @click="open = !open"
+                  aria-controls="navbar-sticky"
+                  aria-expanded="false"
+                >
+                  <div
+                    class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'opacity-0': open } "
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+                    ></span>
+                  </div>
+                </button>
+              </nav>
+            </div>
+          </div>
+          <div
+            class="nav-links items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-stick"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a href="#" class="nav-anchor" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#" class="nav-anchor">About</a>
+              </li>
+              <li>
+                <a href="#" class="nav-anchor">Services</a>
+              </li>
+              <li>
+                <a href="#" class="nav-anchor">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="content bg-main-background bg-cover bg-no-repeat bg-fixed text-white"
+      >
+        <div
+          class="h-screen inset-0 absolute bg-slate-800 bg-opacity-80 z-20 backdrop-blur-sm"
+        ></div>
+        <div class="h-screen inset-0 absolute z-30"></div>
+        <section class="content-wrapper relative z-50">
+          <div class="top-content px-4">
+            <h1 class="text-6xl font-extrabold mb-4">
+              Welcome to
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+              >
+                Ibranista
+              </span>
+              learning.
+            </h1>
+            <div class="bg-gray-200 text-blackish p-4 border-4 border-zinc-50">
+              <p>
+                Here, we'll teach you in a different way that an old fashion
+                highschool educational systems. We'll let you use your
+                imagination and creativity!
+              </p>
+              <p>
+                We have teachers who have really solid background for all the
+                subjects.
+              </p>
+            </div>
+            <figure class="p-4">
+              <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <q>Try to create your imagination!</q>
+              </blockquote>
+              <figcaption class="text-gray-200">
+                —Some ancient genius man, <cite>Uknown book</cite>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="bottom-content bg-gray-900 pb-10">
+            <div class="bottom-wrapper px-4">
+              <h1 class="text-center text-xl p-10">Main Program</h1>
+              <div class="program-wrapper flex flex-col">
+                <div
+                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4"
+                >
+                  <div class="title-wrapper flex gap-2 border-r pr-4 h-full">
+                    <i
+                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl"
+                    ></i>
+                    <h2>Lecture</h2>
+                  </div>
+
+                  <p>you'll take lecture classes only 3 times a week</p>
+                </div>
+                <div
+                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4"
+                >
+                  <div class="title-wrapper flex gap-2 border-r pr-4 h-full">
+                    <i
+                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl"
+                    ></i>
+                    <h2>Discussion</h2>
+                  </div>
+
+                  <p>
+                    you'll discuss with your class mates for at least 40
+                    minutes.
+                  </p>
+                </div>
+                <div
+                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-10"
+                >
+                  <div class="title-wrapper flex gap-2 border-r pr-4 h-full">
+                    <i
+                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl"
+                    ></i>
+                    <h2>Laboratory</h2>
+                  </div>
+
+                  <p>you'll have a laboratory class everyday.</p>
+                </div>
+                <button
+                  class="bg-orangish self-center py-4 px-16 rounded-md hover:bg-orange-700 active:bg-orangish"
+                >
+                  Register Now 2022
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featuredTeachers">
+          <div class="wrapper px-4 bg-slate-900 opacity-80 pb-10">
+            <h1 class="text-center font-bold text-3xl p-7 border-b mb-3">
+              Our Lecturers
+            </h1>
+            <div class="teachers-wrapper flex gap-10 justify-between mb-5">
+              <figure>
+                <img src="./src/assets/mannyHenri.jpeg" alt="" />
+              </figure>
+              <div class="desc">
+                <h2 class="font-bold text-2xl">Manny Henri</h2>
+                <p class="active-anchor font-semibold mb-2">
+                  CEO of Anchor Tech
+                </p>
+                <p>
+                  Manny has morethan 10 years of experience in the programming
+                  industry.
+                </p>
+              </div>
+            </div>
+            <div class="teachers-wrapper flex gap-10 justify-between mb-5">
+              <figure>
+                <img src="./src/assets/mannyHenri.jpeg" alt="" />
+              </figure>
+              <div class="desc">
+                <h2 class="font-bold text-2xl">Manny Henri</h2>
+                <p class="active-anchor font-semibold mb-2">
+                  CEO of Anchor Tech
+                </p>
+                <p>
+                  Manny has morethan 10 years of experience in the programming
+                  industry.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white border p-4 flex justify-center hover:text-black font-bold text-blackish cursor-pointer"
+            >
+              <h2 class=" flex items-center">
+                MORE
+                <i
+                  class="fa-solid fa-arrow-turn-down text-active-anchor px-2 text- opacity-60 hover:opacity-100 text-2xl"
+                ></i>
+              </h2>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</html>
