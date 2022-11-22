@@ -36,7 +36,9 @@
   }
 
   .nav-anchor {
-    @apply block py-2 pl-3 pr-4 
+    @apply 
+          md:text-xl
+          block py-2 pl-3 pr-4 
          text-gray-400 rounded 
          md:hover:bg-gray-100
            md:hover:bg-transparent
@@ -44,6 +46,7 @@
          dark:text-gray-400
          hover:text-white
          dark:border-gray-700
-         hover:bg-blue-700;
+         hover:bg-blue-700
+         cursor-pointer
   }
 }
