@@ -5,8 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="../script/script.js" defer></script>
+    <title>About-Us</title>
   </head>
   <body>
+    <nav class="base-nav">
+      <div
+        class="flex flex-wrap items-center justify-between mx-auto md:container"
+      >
+        <a href="../../index.html" class="flex items-center">
+          <img
+            src="../assets/site-logo.svg"
+            class="h-6 mr-3 sm:h-9"
+            alt="Ibranista Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Ibranista</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" class="nav-start-button">Start Today</button>
+          <div class="relative md:hidden">
+            <nav x-data="{ open: false }">
+              <button
+                data-collapse-toggle="navbar-sticky"
+                class="nav-toggler w-14 h-10 relative bg-red-600 rounded"
+                @click="open = !open"
+                aria-controls="navbar-sticky"
+                aria-expanded="false"
+              >
+                <div
+                  class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                >
+                  <span
+                    class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                    :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+                  ></span>
+                  <span
+                    class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
+                    :class="{'opacity-0': open } "
+                  ></span>
+                  <span
+                    class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                    :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+                  ></span>
+                </div>
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="nav-links items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-stick"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a href="../../index.html" class="nav-anchor" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-anchor">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav-anchor">Services</a>
+            </li>
+            <li>
+              <a href="#" class="nav-anchor">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="section-content-wrapper">
+        <div
+          class="h-[90rem] inset-0 absolute bg-gray-300 bg-opacity-[100%] z-20 backdrop-blur-sm"
+        ></div>
+        <div class="h-screen inset-0 absolute z-30"></div>
+        <section class="h-screen content-wrapper relative z-50 min-w-[448px]">
+          <div class="top-content px-4 sm:px-4 md:container mx-auto">
+            <h1
+              class="text-4xl font-extrabold mb-4 md:p-3 font-sans active-anchor"
+            >
+              About
+              <cite> Ibranista </cite>
+              Learning Company
+            </h1>
+          </div>
+          <div
+            class="mb-8 bg-gray-200 text-blackish p-4 border-4 border-zinc-50 container mx-auto"
+          >
+            <p class="md:text-xl font-lato text-blackish">
+              Ibranista-Learning is the world's largest professional network on
+              the internet. You can use Ibranista to find the right education or
+              internship, connect and strengthen professional relationships, and
+              learn the skills you need to succeed in your career. You can
+              access Ibranista from a desktop, Ibranista mobile app, mobile web
+              experience, or the Ibranista Lite Android mobile app. A complete
+              Ibranista profile can help you connect with opportunities by
+              showcasing your unique professional story through experience,
+              skills, and education. You can also use Ibranista to organize
+              offline events, join groups, write articles, post photos and
+              videos, and more.
+            </p>
+          </div>
+          <div class="meetings bg-gray-50">
+            <section class="py-5 parents-meeting text-black container mx-auto">
+              <h2
+                class="text-center text-2xl font-lato font-bold active-anchor"
+              >
+                Parents Meeting 2022
+              </h2>
+              <p class="md:text-xl font-sans md:leading-10">
+                This is a meeting between the parent and the teacher to talk
+                about your child’s learning and progress. They might be called
+                parent-teacher interviews, parent-teacher conferences or even
+                learning conferences. Many schools and kura organise them for
+                early in the year and then after a mid-year school report has
+                been sent home. They might offer you a set time, invite you to
+                contact them to arrange a time, or more and more schools are
+                asking parents to book a time that suits online using a
+                parent-teacher interview website. Some schools hold meetings
+                before or after school, others run them in the evening. More
+                than one person can go to the meeting - you are welcome to take
+                other members of your family or whānau. They are useful,
+                positive meetings where as well as hearing from your child's
+                teacher, you can ask questions and share your thoughts so that
+                you and your teachers can become partners in your child's
+                education.
+              </p>
+              <div
+                class="py-10 card shadow-lg bg-gray-100 md:w-1/2 mx-auto flex gap-3 items-center justify-center"
+              >
+                <i
+                  class="fa-solid fa-school-circle-check px-2 text-orange-500 opacity-60 hover:opacity-100 text-2xl md:text-6xl md:mb-3"
+                ></i>
+                <h3 class="text-4xl font-lato">School Parents Meeting</h3>
+              </div>
+            </section>
+          </div>
+          <section class="container mx-auto">
+            <h3
+              class="text-2xl font-lato font-bold text-center p-3 active-anchor"
+            >
+              Previous Ibranista Learning Parents Meeting
+            </h3>
+            <p class="p-5 text-black md:text-2xl">
+              Meetings have been held in our company since our company was
+              founded. You can see more details below.
+            </p>
+            <section class="meeting-wrapper flex md:flex-row flex-col gap-5">
+              <div class="bg-meeting md:w-1/2 h-80 relative mb-5">
+                <div class="absolute inset-0 bg-slate-800 opacity-90"></div>
+                <article class="parents-wrapper">
+                  <figure
+                    class="text-2xl relative z-10 flex flex-col justify-center h-80 items-center"
+                  >
+                    <h1>2020</h1>
+                    <p>About Students Grade Results !</p>
+                  </figure>
+                </article>
+              </div>
+              <div class="bg-meeting md:w-1/2 h-80 relative">
+                <div class="absolute inset-0 bg-slate-800 opacity-90"></div>
+                <article class="parents-wrapper">
+                  <figure
+                    class="text-2xl relative z-10 flex flex-col justify-center h-80 items-center"
+                  >
+                    <h1>2021</h1>
+                    <p>About Scholarship !</p>
+                  </figure>
+                </article>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer
+      class="relative top-[65rem] sm:top-[55rem] md:top-[35rem] z-50 bg-slate-800 text-white md:flex justify-around items-center p-3 lg:p-24"
+    >
+      <figure class="logo p-5 sm:p-0 mb-5 cursor-pointer">
+        <a href="../../index.html" class="flex items-center">
+          <img
+            src="../assets/site-logo.svg"
+            class="h-6 mr-3 sm:h-9"
+            alt="Ibranista Logo"
+          />
+          <span class="inline">Ibranista Learning.</span>
+        </a>
+      </figure>
+      <div class="footer-desc flex gap-2">
+        <i
+          class="fa-solid fa-copyright px-2 opacity-60 hover:opacity-100 text-xl"
+        ></i>
+        <p>Copy right protected 2022!</p>
+        <p class="text-active-anchor">
+          We'll provide you the best learning system you will ever imagine!
+        </p>
+      </div>
+    </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer
+  ></script>
 </html>
