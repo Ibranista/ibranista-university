@@ -30,14 +30,13 @@
   .bg-orangish {
     background: var(--site-orange);
   }
-  
+
   .text-blackish {
     color: var(--site-black);
   }
-
+  /* nav-styles */
   .nav-anchor {
-    @apply 
-          md:text-xl
+    @apply md:text-xl
           block py-2 pl-3 pr-4 
          text-gray-400 rounded 
          md:hover:bg-gray-100
@@ -47,6 +46,27 @@
          hover:text-white
          dark:border-gray-700
          hover:bg-blue-700
-         cursor-pointer
+         cursor-pointer;
+  }
+
+  .base-nav {
+    @apply px-2 sm:px-4 py-2.5
+         bg-gray-900 w-full z-50
+           top-0 left-0 border-b border-gray-200
+         dark:border-gray-600 relative;
+  }
+
+  .nav-start-button {
+    @apply text-white bg-orangish 
+             focus:ring-1 focus:outline-none 
+             font-medium rounded-lg text-sm px-5 
+             py-2.5 text-center mr-3 md:mr-0  
+             hover:bg-orange-700 focus:ring-gray-600 
+             active:bg-orangish;
+  }
+
+  /* section-content styles */
+  .section-content-wrapper {
+    @apply bg-main-background bg-cover bg-no-repeat bg-fixed text-white;
   }
 }
