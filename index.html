@@ -15,10 +15,10 @@
   <body>
     <main>
       <nav
-        class="px-2 sm:px-4 py-2.5 bg-gray-900 fixe w-full z-30 top-0 left-0 border-b border-gray-200 dark:border-gray-600 relative"
+        class="px-2 sm:px-4 py-2.5 bg-gray-900 fixe w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600 relative"
       >
         <div
-          class="container flex flex-wrap items-center justify-between mx-auto"
+          class="flex flex-wrap items-center justify-between mx-auto md:container"
         >
           <a href="#" class="flex items-center">
             <img
@@ -34,7 +34,7 @@
           <div class="flex md:order-2">
             <button
               type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white bg-orangish focus:ring-1 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  hover:bg-orange-700 focus:ring-gray-600 active:bg-orangish"
             >
               Start Today
             </button>
@@ -72,7 +72,7 @@
             id="navbar-stick"
           >
             <ul
-              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:bg-gray-900 dark:border-gray-700"
             >
               <li>
                 <a href="#" class="nav-anchor" aria-current="page">Home</a>
@@ -94,12 +94,12 @@
         class="content bg-main-background bg-cover bg-no-repeat bg-fixed text-white"
       >
         <div
-          class="h-screen inset-0 absolute bg-slate-800 bg-opacity-80 z-20 backdrop-blur-sm"
+          class="md:h-[310%] sm:h-[220%] lg:h-[249%] h-[200%] inset-0 absolute bg-slate-800 bg-opacity-80 z-20 backdrop-blur-sm"
         ></div>
         <div class="h-screen inset-0 absolute z-30"></div>
-        <section class="content-wrapper relative z-50">
-          <div class="top-content px-4">
-            <h1 class="text-6xl font-extrabold mb-4">
+        <section class="content-wrapper relative z-50 min-w-[448px]">
+          <div class="top-content px-4 sm:px-4 md:container mx-auto">
+            <h1 class="text-6xl font-extrabold mb-4 md:p-3 font-sans">
               Welcome to
               <span
                 class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
@@ -109,126 +109,232 @@
               learning.
             </h1>
             <div class="bg-gray-200 text-blackish p-4 border-4 border-zinc-50">
-              <p>
+              <p
+                class="md:text-[4rem] font-lato md:bg-clip-text md:text-transparent md:bg-gradient-to-r from-orange-600 to-pink-600"
+              >
                 Here, we'll teach you in a different way that an old fashion
                 highschool educational systems. We'll let you use your
                 imagination and creativity!
               </p>
-              <p>
+              <p class="md:text-[2rem]">
                 We have teachers who have really solid background for all the
                 subjects.
               </p>
             </div>
             <figure class="p-4">
               <blockquote cite="https://www.huxley.net/bnw/four.html">
-                <q>Try to create your imagination!</q>
+                <q class="md:text-[2rem] font-lato">Try to create your imagination!</q>
               </blockquote>
               <figcaption class="text-gray-200">
-                —Some ancient genius man, <cite>Uknown book</cite>
+                —Some ancient scholar, <cite>Uknown book</cite>
               </figcaption>
             </figure>
           </div>
           <div class="bottom-content bg-gray-900 pb-10">
-            <div class="bottom-wrapper px-4">
-              <h1 class="text-center text-xl p-10">Main Program</h1>
-              <div class="program-wrapper flex flex-col">
+            <div class="bottom-wrapper px-4 md:container mx-auto">
+              <h1 class="text-center text-xl md:text-2xl p-10 font-lato">Main Program</h1>
+              <div class="program-wrapper flex flex-col md:flex-row gap-5">
                 <div
-                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4"
+                  <div
+                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4 md:flex-col md:w-1/2"
                 >
-                  <div class="title-wrapper flex gap-2 border-r pr-4 h-full">
+                  <div
+                    class="title-wrapper flex md:block gap-2 border-r md:border-0 pr-4 h-full w-1/2 md:w-auto"
+                  >
                     <i
-                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl"
+                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl md:text-6xl md:mb-3"
                     ></i>
-                    <h2>Lecture</h2>
-                  </div>
-
-                  <p>you'll take lecture classes only 3 times a week</p>
-                </div>
-                <div
-                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4"
-                >
-                  <div class="title-wrapper flex gap-2 border-r pr-4 h-full">
-                    <i
-                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl"
-                    ></i>
-                    <h2>Discussion</h2>
+                    <h2
+                      class="md:text-center md:active-anchor md:font-bold md:text-2xl font-lato"
+                    >
+                      Lecture
+                    </h2>
                   </div>
 
                   <p>
-                    you'll discuss with your class mates for at least 40
-                    minutes.
+                    Students take lecture classes only 3 times a week. All
+                    students should bring all your learning materials for
+                    lecture classes.
                   </p>
                 </div>
                 <div
-                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-10"
+                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4 md:flex-col md:w-1/2"
                 >
-                  <div class="title-wrapper flex gap-2 border-r pr-4 h-full">
+                  <div
+                    class="title-wrapper flex md:block gap-2 border-r md:border-0 pr-4 h-full w-1/2 md:w-auto"
+                  >
                     <i
-                      class="fa-solid fa-chalkboard-teacher px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl"
+                      class="fa-solid fa-people-group px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl md:text-6xl md:mb-3"
                     ></i>
-                    <h2>Laboratory</h2>
+                    <h2
+                      class="md:text-center md:active-anchor md:font-bold md:text-2xl font-lato"
+                    >
+                      Discussion
+                    </h2>
                   </div>
 
-                  <p>you'll have a laboratory class everyday.</p>
+                  <p>
+                    Students will have time to discuss with their classmates
+                    about the current topic. This will happen atleast 3 times a
+                    week.
+                  </p>
                 </div>
-                <button
-                  class="bg-orangish self-center py-4 px-16 rounded-md hover:bg-orange-700 active:bg-orangish"
+                <div
+                  class="card flex justify-between bg-gray-800 p-6 items-center gap-7 mb-4 md:flex-col md:w-1/2"
                 >
-                  Register Now 2022
-                </button>
+                  <div
+                    class="title-wrapper flex md:block gap-2 border-r md:border-0 pr-4 h-full w-1/2 md:w-auto"
+                  >
+                    <i
+                      class="fa-solid fa-laptop-code px-2 text-rose-600 opacity-60 hover:opacity-100 text-2xl md:text-6xl md:mb-3"
+                      >Lab</i
+                    >
+                    <h2
+                      class="md:text-center md:active-anchor md:font-bold md:text-2xl font-lato"
+                    >
+                      Computer Lab
+                    </h2>
+                  </div>
+
+                  <p>
+                    Students will in the computer lab for atleast 4 times a
+                    week. This will help students practice what they have
+                    learned and, apply it on real world.
+                  </p>
+                </div>
               </div>
+              <button
+                class="bg-orangish self-center py-4 px-16 rounded-md hover:bg-orange-700 active:bg-orangish md:w-[50%] md:mx-auto flex justify-center w-full"
+              >
+                Register Now 2022
+              </button>
             </div>
           </div>
         </section>
-        <section class="featuredTeachers">
-          <div class="wrapper px-4 bg-slate-900 opacity-80 pb-10">
-            <h1 class="text-center font-bold text-3xl p-7 border-b mb-3">
-              Our Lecturers
-            </h1>
+        <section
+          class="featuredTeachers relative z-30 bg-slate-900 min-w-[448px]"
+        >
+          <h1
+            class="text-center font-bold text-3xl p-7 border-b pb-3 bg-slate-900 opacity-80 font-lato"
+          >
+            Our Instructors
+          </h1>
+          <div
+            class="wrapper px-4 opacity-80 pb-10 md:grid grid-cols-2 md:container mx-auto"
+          >
             <div class="teachers-wrapper flex gap-10 justify-between mb-5">
               <figure>
                 <img src="./src/assets/mannyHenri.jpeg" alt="" />
               </figure>
               <div class="desc">
-                <h2 class="font-bold text-2xl">Manny Henri</h2>
+                <h2 class="font-bold text-2xl font-lato">Manny Henri</h2>
                 <p class="active-anchor font-semibold mb-2">
                   CEO of Anchor Tech
                 </p>
                 <p>
-                  Manny has morethan 10 years of experience in the programming
+                  Manny has more than 10 years of experience in the programming
                   industry.
                 </p>
               </div>
             </div>
             <div class="teachers-wrapper flex gap-10 justify-between mb-5">
               <figure>
-                <img src="./src/assets/mannyHenri.jpeg" alt="" />
+                <img
+                  src="./src/assets/alexBanks.jpg"
+                  class="w-[550px]"
+                  alt=""
+                />
               </figure>
               <div class="desc">
-                <h2 class="font-bold text-2xl">Manny Henri</h2>
+                <h2 class="font-bold text-2xl font-lato">Alex Banks</h2>
                 <p class="active-anchor font-semibold mb-2">
-                  CEO of Anchor Tech
+                  Senior instructor and content creator
                 </p>
                 <p>
-                  Manny has morethan 10 years of experience in the programming
-                  industry.
+                  Morten help the web make sense by helping people understand
+                  and get the most out of the web, and contribute to the debates
+                  about ownership and democratization of information, design
+                  philosophy, and the open web.
                 </p>
               </div>
             </div>
             <div
-              class="bg-white border p-4 flex justify-center hover:text-black font-bold text-blackish cursor-pointer"
+              class="teachers-wrapper md:flex gap-10 justify-between mb-5 hidden"
             >
-              <h2 class=" flex items-center">
-                MORE
-                <i
-                  class="fa-solid fa-arrow-turn-down text-active-anchor px-2 text- opacity-60 hover:opacity-100 text-2xl"
-                ></i>
-              </h2>
+              <figure>
+                <img
+                  src="./src/assets/Ebenezer.jpeg"
+                  class="w-[400px]"
+                  alt=""
+                />
+              </figure>
+              <div class="desc">
+                <h2 class="font-bold text-2xl font-lato">Ebenezor Don</h2>
+                <p class="active-anchor font-semibold mb-2">
+                  Creator of genius-labs in Nigeria
+                </p>
+                <p>
+                  Ebenezor is a Software Engineer, NewDev.io Founder and
+                  Technical Content Creator. He has an excellent skill of
+                  breaking down complex topics into their simplest forms.
+                </p>
+              </div>
             </div>
+            <div
+              class="teachers-wrapper md:flex gap-10 justify-between mb-5 hidden"
+            >
+              <figure>
+                <img src="./src/assets/morten.jpg" class="w-[400px]" alt="" />
+              </figure>
+              <div class="desc">
+                <h2 class="font-bold text-2xl font-lato">Morten Ran-Hendrikson</h2>
+                <p class="active-anchor font-semibold mb-2">
+                  Creator of genius-labs in Nigeria
+                </p>
+                <p>
+                  Ebenezor is a Software Engineer, NewDev.io Founder and
+                  Technical Content Creator. He has an excellent skill of
+                  breaking down complex topics into their simplest forms.
+                </p>
+              </div>
+            </div>
+
+            <button
+              class="active:bg-orangish active:text-white bg-white border p-4 flex justify-center hover:text-black font-bold text-blackish cursor-pointer w-full md:hidden"
+            >
+              <h2 class="flex items-center">MORE</h2>
+              <i
+                class="fa-solid fa-arrow-turn-down text-active-anchor px-2 text- opacity-60 hover:opacity-100 text-2xl"
+              ></i>
+            </button>
           </div>
         </section>
       </section>
     </main>
+    <footer
+      class="relative top-[5rem] z-30 bg-slate-900 text-white md:flex justify-around items-center p-3 lg:p-24"
+    >
+      <figure class="logo flex items-center p-5 sm:p-0 mb-5">
+        <img
+          src="./src/assets/site-logo.svg"
+          class="h-6 mr-3 sm:h-9"
+          alt="Ibranista Logo"
+        />
+        <span class="inline">Ibranista Learning.</span>
+      </figure>
+      <div class="footer-desc flex gap-2">
+        <i
+          class="fa-solid fa-copyright px-2 opacity-60 hover:opacity-100 text-xl"
+        ></i>
+        <p>Copy right protected 2022!</p>
+        <p class="text-active-anchor">
+          We'll provide you the best learning system you will ever imagine!
+        </p>
+      </div>
+    </footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer
+  ></script>
 </html>
