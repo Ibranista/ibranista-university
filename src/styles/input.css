@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* additional styles can be imported here */
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
+
+:root {
+  --site-black: #272a31;
+  --site-orange: #ec5242;
+  --site-grey: #d3d3d3;
+  --font-lato: "Lato";
+}
+
+@layer components {
+  .font-lato {
+    font-family: var(--font-lato);
+  }
+
+  .font-sans {
+    font-family: sans-serif;
+  }
+
+  .active-anchor {
+    color: var(--site-orange);
+  }
+
+  .bg-orangish {
+    background: var(--site-orange);
+  }
+
+  .text-blackish {
+    color: var(--site-black);
+  }
+
+  .min-w {
+    min-width: 675px;
+  }
+
+  .md-w {
+    /* min-width: 1100px; */
+  }
+
+  /* nav-styles */
+
+  .nav-anchor {
+    @apply md:text-xl     block py-2  text-gray-400 rounded     md:hover:bg-gray-100      md:hover:bg-transparent      md:py-0    dark:text-gray-400    hover:active-anchor    dark:border-gray-700    hover:bg-blue-700    cursor-pointer;
+  }
+
+  .base-nav {
+    @apply px-2 sm:px-4 py-2.5 bg-gray-100 w-full z-50   top-0 left-0 border-b border-gray-200 dark:border-gray-600 relative;
+  }
+
+  .nav-start-button {
+    @apply text-black border-orange-600 border-4 px-2 hover:bg-orangish hover:text-white active:bg-orange-800;
+  }
+
+  /* section-content styles */
+  .section-content-wrapper {
+    @apply bg-2015 bg-cover bg-no-repeat bg-fixed text-white;
+  }
+
+  .card {
+    @apply hover:border-2 md:box-border;
+  }
+}
