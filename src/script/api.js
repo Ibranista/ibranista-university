@@ -5,13 +5,6 @@ const teacherWrapper = document.querySelector('.wrapper');
 
 let Data = [
   {
-    name: 'Manny Henri',
-    figure: './src/assets/mannyHenri.jpeg',
-    alt: 'Emannuel-Henri',
-    profession: 'CEO of Anchor Tech',
-    about: 'Manny has more than 10 years of experience in the programming industry.',
-  },
-  {
     name: 'Alex Banks',
     figure: './src/assets/alexBanks.jpg',
     alt: 'Alex Banks',
@@ -41,9 +34,16 @@ let Data = [
   },
   {
     name: 'Morten Ran-Hendrikson',
-    figure: './src/assets/instructor-1.jpeg',
+    figure: './src/assets/morten.jpg',
     alt: 'Morten',
     profession: ' Senior stuff instructor',
+    about: 'Morten help the web make sense by helping people understand and get the most out of the web, and contribute to the debates about ownership.',
+  },
+  {
+    name: 'Morten Ran-Justin',
+    figure: './src/assets/instructor-2.jpeg',
+    alt: 'Morten',
+    profession: ' Senior Author',
     about: 'Morten help the web make sense by helping people understand and get the most out of the web, and contribute to the debates about ownership.',
   },
 ];
