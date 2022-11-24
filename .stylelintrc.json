@@ -29,6 +29,7 @@
     "build/**",
     "dist/**",
     "**/reset*.css",
-    "**/bootstrap*.css"
+    "**/bootstrap*.css",
+    "tailwind.config.js"
   ]
 }
