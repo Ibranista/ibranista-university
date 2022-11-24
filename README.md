@@ -1,22 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- TABLE OF CONTENTS -->
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
-
-<!-- PROJECT DESCRIPTION -->
-
 # 📖 Capstone-Project: Programming Competion-page <a name="about-project"></a>
 
 **Ibranista-Learning** is a fictional E-learning website. It is learning provider in Ethiopia. It provides video courses taught by industry experts different sets of skills in programming, engineering and other fields. The courses are intense and need focus in order to follow up the instructors.
