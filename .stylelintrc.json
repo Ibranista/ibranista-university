@@ -26,7 +26,6 @@
     "build/**",
     "dist/**",
     "**/reset*.css",
-    "**/bootstrap*.css",
-    "src/styles/input.css"
+    "**/bootstrap*.css"
   ]
 }
