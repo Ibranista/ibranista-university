@@ -13,23 +13,36 @@
     <title>About-Us</title>
   </head>
   <body>
-    <nav class="base-nav">
+    <nav
+      class="min-w bg-gray-800 hidden md:flex justify-end text-white py-2 px-[1rem] sm:px-[12rem]"
+    >
+      <a href="#" class="pr-5">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" class="pr-5">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#" class=""> English </a>
+    </nav>
+    <nav class="base-nav min-w md:">
       <div
         class="flex flex-wrap items-center justify-between mx-auto md:container"
       >
-        <a href="../../index.html" class="flex items-center">
+        <a
+          href="../../index.html"
+          class="flex items-center order-1 md:order-none mr-[35%] md:mr-auto"
+        >
           <img
             src="../assets/site-logo.svg"
             class="h-6 mr-3 sm:h-9"
             alt="Ibranista Logo"
           />
           <span
-            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-xl font-semibold whitespace-nowrap text-black"
             >Ibranista</span
           >
         </a>
-        <div class="flex md:order-2">
-          <button type="button" class="nav-start-button">Start Today</button>
+        <div class="flex gap-5 md:mr-16">
           <div class="relative md:hidden">
             <nav x-data="{ open: false }">
               <button
@@ -58,52 +71,55 @@
               </button>
             </nav>
           </div>
-        </div>
-        <div
-          class="nav-links items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-stick"
-        >
-          <ul
-            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:bg-gray-900 dark:border-gray-700"
+          <div
+            class="nav-links items-center justify-between hidden w-full md:flex md:w-auto"
+            id="navbar-stick"
           >
-            <li>
-              <a href="../../index.html" class="nav-anchor" aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="#" class="nav-anchor">About</a>
-            </li>
-            <li>
-              <a href="#" class="nav-anchor">Services</a>
-            </li>
-            <li>
-              <a href="#" class="nav-anchor">Contact</a>
-            </li>
-          </ul>
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:order-0"
+            >
+              <li>
+                <a
+                  href="../../index.html"
+                  class="nav-anchor text-orange-600"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-anchor">About</a>
+              </li>
+              <li>
+                <a href="#" class="nav-anchor">Services</a>
+              </li>
+              <li>
+                <a href="#" class="nav-anchor">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="nav-start-button hidden md:block md:order-2 order-1"
+          >
+            CC Campaign
+          </button>
         </div>
       </div>
     </nav>
     <main class="main">
       <section class="section-content-wrapper">
-        <div
-          class="h-[90rem] inset-0 absolute bg-gray-300 bg-opacity-[100%] z-20 backdrop-blur-sm"
-        ></div>
-        <div class="h-screen inset-0 absolute z-30"></div>
-        <section class="h-screen content-wrapper relative z-50 min-w-[448px]">
+        <section class="content-wrapper relative z-50 min-w-[448px]">
           <div class="top-content px-4 sm:px-4 md:container mx-auto">
             <h1
-              class="text-4xl font-extrabold mb-4 md:p-3 font-sans active-anchor"
+              class="text-4xl font-extrabold mb-4 md:p-10 font-lato active-anchor text-center"
             >
-              About
-              <cite> Ibranista </cite>
-              Learning Company
+              About Ibranista Learning Company
             </h1>
           </div>
           <div
-            class="mb-8 bg-gray-200 text-blackish p-4 border-4 border-zinc-50 container mx-auto"
+            class="mb-8 bg-gray-200 text-blackish p-4 border-4 border-zinc-50 container mx-auto md:w-1/2"
           >
-            <p class="md:text-xl font-lato text-blackish">
+            <p class="md:text-xl font-lato text-blackish text-center md:px-7">
               Ibranista-Learning is the world's largest professional network on
               the internet. You can use Ibranista to find the right education or
               internship, connect and strengthen professional relationships, and
@@ -117,14 +133,23 @@
               videos, and more.
             </p>
           </div>
+          <p class="text-black text-center text-xl">
+            Our company was founded in 2021 by many talented people in various
+            fields.
+          </p>
+          <p class="text-center font-bold md:pb-16">
+            <a href="" class="text-black underline text-center mx-auto"
+              >ibranista88@gmail.com</a
+            >
+          </p>
           <div class="meetings bg-gray-50">
             <section class="py-5 parents-meeting text-black container mx-auto">
               <h2
-                class="text-center text-2xl font-lato font-bold active-anchor"
+                class="text-center text-2xl font-lato font-bold text-black mb-5"
               >
                 Parents Meeting 2022
               </h2>
-              <p class="md:text-xl font-sans md:leading-10">
+              <p class="md:text-xl font-sans md:leading-10 mb-5">
                 This is a meeting between the parent and the teacher to talk
                 about your child’s learning and progress. They might be called
                 parent-teacher interviews, parent-teacher conferences or even
@@ -152,7 +177,7 @@
               </div>
             </section>
           </div>
-          <section class="container mx-auto">
+          <section class="container mx-auto bg-blue-600">
             <h3
               class="text-2xl font-lato font-bold text-center p-3 active-anchor"
             >
@@ -191,7 +216,7 @@
       </section>
     </main>
     <footer
-      class="relative top-[65rem] sm:top-[55rem] md:top-[35rem] z-50 bg-slate-800 text-white md:flex justify-around items-center p-3 lg:p-24"
+      class="relativ z-50 bg-slate-800 text-white md:flex justify-around items-center p-3 lg:p-24"
     >
       <figure class="logo p-5 sm:p-0 mb-5 cursor-pointer">
         <a href="../../index.html" class="flex items-center">
