@@ -12,11 +12,18 @@
   --site-orange: #ec5242;
   --site-grey: #d3d3d3;
   --font-lato: "Lato";
+  --bg-program:#272a32;
+  --bg-grayish: rgba(255, 255, 255, 0.1);
 }
 
 @layer components {
+
+  .bg-program {
+    background: var(--bg-program)
+  }
+
   .bg-grayish {
-    background: var(--site-black);
+    background: var(--bg-grayish);
   }
 
   .font-lato {
