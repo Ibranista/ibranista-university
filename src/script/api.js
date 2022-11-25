@@ -5,18 +5,12 @@ const teacherWrapper = document.querySelector('.wrapper');
 
 let Data = [
   {
-    name: 'Alex Banks',
-    figure: './src/assets/alexBanks.jpg',
-    alt: 'Alex Banks',
-    profession: 'Senior instructor and content creator',
-    about: 'Alex Banks is a true JavaScript believer. He’s taught JavaScript for two decades and co-founded Moon Highway in 2012 to design and deliver JavaScript curriculums for enterprise companies.',
-  },
-  {
     name: 'Ebenezor Don',
     figure: './src/assets/Ebenezer.jpeg',
     alt: 'Ebenezor Don',
     profession: 'Creator of genius-labs in Nigeria',
-    about: '   Ebenezor is a Software Engineer, NewDev.io Founder and Technical Content Creator. He has an excellent skill of breaking down complex topics into their simplest forms.',
+    about: 'Ebenezor is a Software Engineer, NewDev.io Founder and Technical Content Creator. He has an excellent skill of breaking down complex topics into their simplest forms.',
+    class: '',
   },
   {
     name: 'Paula Hendrikson',
@@ -24,6 +18,7 @@ let Data = [
     alt: 'Paula',
     profession: 'Creator of genius-labs in Nigeria',
     about: '   Paula is a Software Engineer, NewDev.io Founder and Technical Content Creator. He has an excellent skill of breaking down complex topics into their simplest forms.',
+    class: '',
   },
   {
     name: 'Justin Junkins',
@@ -31,6 +26,7 @@ let Data = [
     alt: 'Junkins',
     profession: 'Creator of genius-labs in Nigeria',
     about: 'Junkins is a Software Engineer, NewDev.io Founder and Technical Content Creator. He has an excellent skill of breaking down complex topics into their simplest forms.',
+    class: 'hidden md:flex',
   },
   {
     name: 'Morten Ran-Hendrikson',
@@ -38,6 +34,7 @@ let Data = [
     alt: 'Morten',
     profession: ' Senior stuff instructor',
     about: 'Morten help the web make sense by helping people understand and get the most out of the web, and contribute to the debates about ownership.',
+    class: 'hidden md:flex',
   },
   {
     name: 'Morten Ran-Justin',
@@ -45,6 +42,15 @@ let Data = [
     alt: 'Morten',
     profession: ' Senior Author',
     about: 'Morten help the web make sense by helping people understand and get the most out of the web, and contribute to the debates about ownership.',
+    class: 'hidden md:flex',
+  },
+  {
+    name: 'Justin Ran-Justin',
+    figure: './src/assets/instructor-1.jpeg',
+    alt: 'Morten',
+    profession: ' Senior Author',
+    about: 'Morten help the web make sense by helping people understand and get the most out of the web, and contribute to the debates about ownership.',
+    class: 'hidden md:flex',
   },
 ];
 
@@ -54,7 +60,7 @@ let instructors = '';
 for (Data of Data) {
   instructors += `
     <div
-              class="teachers-wrapper md:flex gap-2 justify-between mb-5 hidden md:ml-5"
+              class="teachers-wrapper flex gap-4 justify-between mb-5 md:ml-5 ${Data.class}"
             >
               <figure>
                 <img
