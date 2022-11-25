@@ -77,6 +77,11 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CREDITS -->
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+[Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for the beautiful design.
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
