@@ -70,13 +70,13 @@ for (Data of Data) {
                 />
               </figure>
               <div class="desc">
-                <h2 class="font-bold text-2xl font-lato">
+                <h2 class="font-bold text-2xl font-lato text-black">
                   ${Data.name}
                 </h2>
                 <p class="active-anchor font-semibold mb-2 md:mb-auto">
                   ${Data.profession}
                 </p>
-                <p>
+                <p class="text-black">
                  ${Data.about}
                 </p>
               </div>
