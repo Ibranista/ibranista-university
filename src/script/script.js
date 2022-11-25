@@ -1,8 +1,10 @@
-const navLinks = document.querySelector('.nav-links')
-const navToggler = document.querySelector(".nav-toggler")
-const navToggle = (e) =>{
-    e.preventDefault()
-    navLinks.classList.toggle('hidden')
-}
+/* eslint-disable linebreak-style */
+const navLinks = document.querySelector('.nav-links');
+const navToggler = document.querySelector('.nav-toggler');
 
-navToggler.addEventListener('click',navToggle)
+const navToggle = (e) => {
+  e.preventDefault();
+  navLinks.classList.toggle('hidden');
+};
+
+navToggler.addEventListener('click', navToggle);
